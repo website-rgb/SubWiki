@@ -1,198 +1,206 @@
 html {
-    background-color: #151515;
+  background-color: rgb(53, 53, 53);
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    height: 7.5vh;
-    width: 100%;
-    border: none;
-    background: linear-gradient(
-        to bottom,
-        white 95%,
-        rgba(255, 255, 255, 0) 100%
-    );
-    display: flex;
-    align-items: center;
-    animation-name: OU;
-    animation-duration: 1s;
-    position: sticky;
-    top: 0;
-}
-
-@keyframes OU {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-img.logo {
-    width: auto;
-    margin-left: 0.3125rem;
-    height: 6vh;
-}
-
-p.headertxt {
-    font-family: Inter, sans-serif;
-    margin-left: 0.3125rem;
-    font-size: 2.5vh;
-}
-
-h1.überschrift {
-    font-family: Inter, sans-serif;
-    margin-left: 0.625rem;
-    color: white;
-    animation-name: LR;
-    animation-duration: 1s;
-    font-weight: 200;
-    font-size: 5vh;
+  font-family: Inter, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes LR {
-    0% {
-        opacity: 0;
-        transform: translateX(-10px);
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+div.header {
+  animation-name: OU;
+  animation-duration: 1s;
+  width: 100%;
+  background: linear-gradient(to bottom, white 95%, transparent);
+  border: none;
+  align-items: center;
+  display: flex;
+}
+
+img.logo {
+  width: auto;
+  height: 7vh;
+  margin-left: 0.625rem;
+}
+
+@keyframes OU {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 p.txt1 {
-    font-family: Inter, sans-serif;
-    color: white;
-    font-weight: 50;
-    margin-left: 0.625rem;
-    animation-name: LR;
-    animation-duration: 1s;
-    font-size: 3vh;
+  margin-left: 0.625rem;
+  font-size: 3vh;
 }
 
-hr.trenn {
-    border: none;
-    width: 100%;
-    height: 0.125rem;
-    animation-name: LR;
-    animation-duration: 1s;
-    margin-left: 0.625rem;
-    background: linear-gradient(to right, white, transparent);
-}
-
-h1.ü2 {
-    color: white;
-    font-family: Inter, sans-serif;
-    animation-name: LR;
-    animation-duration: 1s;
-    font-size: 3.5vh;
-    font-weight: 200;
-    margin-left: 0.625rem;
-}
-
-button.btn1 {
-    font-family: Inter, sans-serif;
-    color: white;
-    border: 0.0625rem white solid;
-    background: none;
-    border-radius: 100px;
-    margin-left: 0.625rem;
-    animation-name: LR;
-    animation-duration: 1s;
-    font-size: 3vh;
-    font-weight: 1;
-    width: fit-content;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 0.125rem;
-    padding-bottom: 0.125rem;
-    cursor: pointer;
-}
-
-button.btn1:hover {
-    color: #636363;
-    border: 0.0625rem #636363 solid;
-}
-
-p.txt2 {
-    font-family: Inter, sans-serif;
-    color: white;
-    animation-name: LR;
-    animation-duration: 1s;
-    font-size: 2vh;
-    font-weight: 1;
-    margin-left: 0.625rem;
-}
-
-details.d1 {
-    color: white;
-    font-family: Inter, sans-serif;
-    animation-name: LR;
-    animation-duration: 1s;
-    font-size: 3.5vh;
-    font-weight: 200;
-    margin-left: 0.625rem;
-    top: 0;
-}
-
-img.pic1 {
-    height: auto;
-    width: 40vh;
-    animation-name: LR;
-    animation-duration: 1s;
-    box-shadow: 0 0 1.5rem white;
-    margin-left: 0.625rem;
-    border-radius: 10px;
+h1.txt2 {
+  animation-name: LR;
+  animation-duration: 1s;
+  color: white;
+  font-weight: 300;
+  margin-left: 0.625rem;
+  font-size: 4vh;
 }
 
 p.txt3 {
-    font-family: Inter, sans-serif;
-    font-weight: 1;
-    margin-left: 0.625rem;
-    font-size: 2vh;
-    color: white;
-    animation-name: LR;
-    animation-duration: 1s;
-    white-space: pre-line;
+  animation-name: LR;
+  animation-duration: 1s;
+  margin-left: 0.625rem;
+  color: white;
+  font-weight: 1;
+  font-size: 2.5vh;
+}
+
+hr.trenn1 {
+  width: 100%;
+  height: 0.125rem;
+  border: none;
+  background: linear-gradient(to right, white, transparent);
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+p.txt4 {
+  animation-name: LR;
+  animation-duration: 1s;
+  color: white;
+  margin-left: 0.625rem;
+  font-weight: 1;
+  font-size: 1.6vh;
+}
+
+button.btn1 {
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+  width: fit-content;
+  color: white;
+  border-radius: 100px;
+  background: none;
+  border: 0.0625rem white solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 2vh;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.btn1:hover {
+  color: rgb(145, 145, 145);
+  border: 0.0625rem rgb(145, 145, 145) solid;
+}
+
+button.btn2 {
+  margin-left: auto;
+  margin-right: 1.25rem;
+  background: none;
+  border: 0.0625rem black solid;
+  border-radius: 100px;
+  font-size: 2.2vh;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.btn2:hover {
+  color: rgb(145, 145, 145);
+  border: 0.0625rem rgb(145, 145, 145) solid;
+}
+
+.page {
+  display: none;
+}
+
+button.btn3 {
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+  width: fit-content;
+  color: white;
+  border-radius: 100px;
+  background: none;
+  border: 0.0625rem white solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 3vh;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.btn3:hover {
+  color: rgb(145, 145, 145);
+  border: 0.0625rem rgb(145, 145, 145) solid;
+}
+
+img.img1 {
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+  border-radius: 2vh;
+  width: auto;
+  height: 30vh;
+  box-shadow: 0 0 15px white;
+  max-width: 94%;
 }
 
 table {
-    border-collapse: collapse;
-    width: 40vh;
-    font-size: 2vh;
-    color: white;
-    font-family: Inter, sans-serif;
-    animation-name: LR;
-    animation-duration: 1s;
-    font-weight: 1;
-    text-align: center;
-    margin-left: 0.625rem;
+  border-collapse: collapse;
+  animation-name: LR;
+  animation-duration: 1s;
+  color: white;
+  font-weight: 1;
+  margin-left: 0.625rem;
+  font-size: 2.4vh;
 }
 
 th,
 td {
-    border: 0.0625rem white solid;
+  border: 0.0625rem white solid;
+  text-align: center;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
-thead {
-    background-color: white;
-    color: black;
+thead th {
+  background-color: white;
+  color: black;
+  border: 0.0625rem black solid;
 }
 
-button.btn2 {
-    border: 0.0625rem black solid;
-    background: none;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    border-radius: 100px;
-    font-size: 2.2vh;
-    margin-left: auto;
-    margin-right: 0.625rem;
+button.btn4 {
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+  width: fit-content;
+  color: white;
+  border-radius: 100px;
+  background: none;
+  border: 0.0625rem white solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 3vh;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.btn4:hover {
+  color: rgb(145, 145, 145);
+  border: 0.0625rem rgb(145, 145, 145) solid;
 }

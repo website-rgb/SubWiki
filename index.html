@@ -1,50 +1,45 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="icon" type="image/png" href="logo.png" />
-        <title>SubWiki</title>
-        <link rel="stylesheet" href="style.css" />
-        <meta charset="UTF-8" />
-        <meta name="author" content="@Red-Circuit (youtube)" />
-    </head>
-    <body>
-        <div class="header">
-            <img src="logo.png" class="logo" />
-            <p class="headertxt">SubWiki</p>
-        </div>
-        <div class="willkommen">
-            <h1 class="überschrift">Willkommen auf SubWiki,</h1>
-            <p class="txt1">hier findest du Informationen über U-Boote.</p>
-        </div>
-        <hr class="trenn" />
-        <details class="d1">
-            <summary class="ü2">Deutsche WWII U-Boote</summary>
-            <button onclick="window.location.href = 'U-1.html'" class="btn1">
-                U-1
-            </button>
-        </details>
-        <br />
-        <hr class="trenn" />
-        <p class="txt2">
-            <strong>Bedeutungen:</strong><br /><br />
-            WWII: 2. Weltkrieg<br />
-            - WW steht für "World War"<br />
-            - II ist die römische Zahl für 2
-        </p>
-        <hr class="trenn" />
-        <p class="txt2">
-            <b>Information:</b>
-            <br /><br />
-            Bilder die auf dieser Webseite verwendet werden sind Public Domain.
-            Dazu wird diese Webseite per GitHub gehostet, wo ein dateigrößen
-            Limit besteht, deshalb werden Bilder stark kompremiert um mehr
-            U-Boot Typen in diese Webseite zu dokumentieren.
-        </p>
-    </body>
+  <head>
+    <meta name="author" content="@Red-Circuit" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <title>SubWiki</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="logo.png" class="logo" />
+      <p class="txt1">SubWiki</p>
+    </div>
+    <h1 class="txt2">Willkommen auf SubWiki,</h1>
+    <p class="txt3">
+      Diese Webseite ist ein Lexikon (oder so ähnlich) die sich mit U-Booten
+      beschäftigt.
+    </p>
+    <hr class="trenn1" />
+    <button onclick="window.location.href='deutsch.html'" class="btn1">Deutsche U-Boote</button>
+    <hr class="trenn1" />
+    <p class="txt4">
+      <b>Information:</b>
+      <br />
+      <br />
+      Wir kürzen auf dieser Webseite "2. Weltkrieg" mit WWII ab.
+      <br />
+      --
+      <br />
+      Diese Webseite wird mit GitHub Pages gehostet, wo ein Limit von 1GB
+      besteht, desewgen werden Bilder stark komprimiert.
+      <br />
+      --
+      <br />
+      Bilder auf dieser Webseite sind Public Domain und meistens von Wikipedia
+    </p>
+  </body>
 </html>
