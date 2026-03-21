@@ -27,6 +27,9 @@ div.header {
   border: none;
   align-items: center;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 img.logo {
@@ -168,6 +171,7 @@ table {
   font-weight: 1;
   margin-left: 0.625rem;
   font-size: 2.4vh;
+  max-width: 100%;
 }
 
 th,
